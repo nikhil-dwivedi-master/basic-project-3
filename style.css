@@ -1,0 +1,158 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body 
+{
+    width: 100%;
+    height: 100%;
+}
+
+#main 
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1489401645581-907b695b9bce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#nav 
+{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    top: 10px;
+    padding: 0 20px;
+    color: white;
+}
+
+#location 
+{
+    position: absolute;
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+#nl 
+{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: white;
+}
+
+#nr 
+{
+    position: absolute;
+    display: flex;
+    top: 20px;
+    right: 20px;
+    gap: 20px;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+#nr a 
+{
+    text-decoration: none;
+    color: white;
+    right: 0;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#left {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#left #scroll{
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform-origin: 0 50%;
+    transform: translate(-50%, 0) rotate(-90deg);
+
+}
+#scroll #line{
+    width: 100px;
+    height: 2px;
+    background-color: white;
+}
+#text{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#location p{
+    
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+
+#right 
+{
+    width: 70%;
+    height: 100%;
+}
+#rtext{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    color: white;
+    text-align: right;
+
+}
+#rtext h3{
+    font-size: 40px;
+    line-height: 1;
+font-weight: 400;
+}
+#rtext h1{
+    font-weight: 300;
+    font-size: 200px;
+    line-height: 1;
+    }
+#rtext input{
+    
+    width:  100%;
+    padding: 12px 22px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+#rtext input::placeholder{
+    color: white;
+}
+#rtext #input{
+    display: flex;
+    align-items: center;
+justify-content: flex-start;
+}
+
+.para{
+    font-size: 2rem;
+}
